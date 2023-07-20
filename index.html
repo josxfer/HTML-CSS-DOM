@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html-Css-Dom</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="left_block">
+        <h2>Juana</h2>
+        <div id="imp_juana">          
+        </div>
+      </div>
+      <div class="central_block">
+        <h1>Liquidacion de ventas del mes</h1>
+      <form id="formulario" class="form" action="form" >
+        <div class="select">
+          <select name="vendedor" id="vend">
+            <option selected disabled="">Selecciona un vendedor</option>
+            <option value="juana">Juana</option>
+            <option value="pedro">Pedro</option>
+          </select><br />
+        </div>
+        <div class="select">
+          <select name="producto" id="prod">
+            <option selected disabled="">Selecciona un producto</option>
+            <option value="aqua">Aqua</option>
+            <option value="emocion">Emoción</option>
+            <option value="alegria">Alegría</option>
+            <option value="frescura">Frescura</option>
+          </select><br />
+        </div>
+        <div class="enviar">
+          <input class="input-cant" type="number" placeholder="Ingresa la cantidad" id="cantidad" name="cantidad" />
+          <input class="input_submit submit" type="submit" value="Enviar" />
+        </div>
+        <input class="btn_fin hidden" type="button" value="Finalizar" id="btn_fin" name="btn_fin">
+      </form>
+      <div class="mensaje_ganador" id="valoresTotales"></div>
+      </div>
+      <div class="rigth_block">
+        <h2>Pedro</h2>
+        <div id="imp_pedro">
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
